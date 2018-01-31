@@ -61,11 +61,7 @@ h1,h2,h3,h4,h5,h6,a{
     padding-bottom: 20px;
 }
 
-.picture img{
-    width: 500px;
-    height: 500px;
 
-}
 
 .arrow-right{
     float:left;
@@ -87,7 +83,19 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 #calculate{
-   background-color: #ffffff;
+   background: #ffde00;
+    padding: 25px 90px;
+    border-radius: 50px;
+
+}
+
+.owl-nav{
+    display: flex;
+
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 40%;
 }
 
 /*OUR WORKS SECTION*/
