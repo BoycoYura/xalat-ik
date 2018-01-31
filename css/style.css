@@ -6,3 +6,84 @@
 h1,h2,h3,h4,h5,h6,a{
     font-family: 'Pacifico', cursive!important;
 }
+
+/*--------------Katalog-------------*/
+
+.katalog_title {
+	margin: 76px 0;
+
+	font-size: 48px;
+	text-align: center;
+}
+
+.katalog_item {
+	margin-bottom: 116px;
+}
+
+.vertical_align_block {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.katalog_item_header {
+	height: 87px;
+	text-align: center;
+	border-radius: 10px 10px 0 0;
+	background: #ccc;
+	vertical-align: middle;
+}
+
+.katalog_item_header_title {
+	display: inline-block;
+	vertical-align: middle;
+
+	font-size: 24px;
+	text-align: center;
+	color: #7044c0;
+}
+
+.katalog_item_content_img {
+	width: 100%;
+	display: block;
+}
+
+.katalog_item_footer {
+	position: relative;
+
+	height: 104px;
+	border-radius: 0 0 10px 10px;
+	background: #ccc;
+	text-align: center;
+}
+
+.katalog_item_footer_price {
+	padding-top: 30px;
+}
+
+.katalog_item_footer_price_text {
+	margin-right: 7px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #363a37;
+}
+
+.katalog_item_footer_price_money {
+	margin-right: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #5c3494;
+}
+
+.katalog_item_footer_price_currency {
+	color: #5c3494;
+}
+
+.katalog_item_footer_link {
+	/*position: absolute;*/
+	color: white;
+	padding: 16px 87px;
+	background-image: linear-gradient(to bottom, #094efe, #7544bd);
+	border-radius: ;
+}
+/*----------------------------------*/
