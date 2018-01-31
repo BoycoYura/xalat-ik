@@ -84,10 +84,11 @@ h1,h2,h3,h4,h5,h6,a{
 
 #calculate{
    background: #ffde00;
-    padding: 25px 90px;
+    padding: 10px 80px;
     border-radius: 50px;
 
 }
+
 
 .owl-nav{
     display: flex;
@@ -96,6 +97,18 @@ h1,h2,h3,h4,h5,h6,a{
     position: absolute;
     width: 100%;
     top: 40%;
+}
+
+
+@media (max-width: 775px){
+  .owl-carousel{
+      width:600px !important;
+
+  }
+    .owl-carousel{
+        width:90%;
+    }
+
 }
 
 /*OUR WORKS SECTION*/
