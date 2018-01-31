@@ -6,3 +6,58 @@
 h1,h2,h3,h4,h5,h6,a{
     font-family: 'Pacifico', cursive!important;
 }
+
+
+/*OUR WORKS SECTION*/
+.our-works h2{
+    text-align: center;
+    margin-top:145px;
+    font-size: 40px;
+    color:#535353;
+
+}
+
+.row{ margin-top: 60px;  }
+
+.owl-carousel {
+
+    display: block !important;
+    padding-top: 20px;
+    width: 800px;
+    margin: 0 auto;
+    background-image: url(../img/row.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.picture img{
+    width: 500px;
+    height: 500px;
+
+}
+
+.arrow-right{
+    float:left;
+
+}
+.arrow-left{
+    float:right;
+
+}
+
+.social{
+    margin-top: 65px;
+    text-align: center;
+
+}
+
+.social span{
+    padding: 15px;
+}
+
+#calculate{
+   background-color: #ffffff;
+}
+
+/*OUR WORKS SECTION*/
