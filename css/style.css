@@ -255,3 +255,96 @@ body{
 
 
 /* Intro */
+
+/*
+	  how-order
+	(Как заказать)
+*/
+
+.how-order-background-left{
+	position: absolute;
+	left: 2%;
+}
+
+.how-order-background-right{
+	position: absolute;
+	right: 7%;
+	/*z-index: -1;*/
+}
+
+.how-order{
+	color: #535353;
+	padding: 10px 0 160px 0px;
+}
+
+.how-order .how-order-background-left img{
+	height: 875px;
+}
+
+.how-order .how-order-background-right img{
+	height: 800px;
+}
+
+.how-order h2{
+	font-size: 48px;
+	text-align: center;
+}
+
+.how-order-item{
+	margin-top: 60px;
+	text-align: center;
+}
+
+.how-order p{
+	font-size: 16px;
+	font-family: 'Gothic font'!important;
+	font-weight: bold;
+}
+
+.how-order .how-order-item-contact-regular{
+	font-weight: normal;
+}
+
+.how-order .how-order-item-head{
+	font-size: 72px;
+	margin-top: 20px;
+	color: #DCE2FB;
+	margin-bottom: 10px;
+}
+
+.how-order-item-img-hover img{
+	display: none;
+}
+
+.how-order-item:hover .how-order-item-img-hover img{
+	display: block;
+	margin-top: -265px;
+	margin-left: 45px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+.how-order-item:hover .how-order-item-head{
+	color: #fff;
+}
+
+.how-order-item:hover .how-order-purple{
+	color: #5c3494;
+}
+
+.how-order .how-order-item-description{
+	margin-bottom: 15px;
+	line-height: 1.4;
+}
+
+.how-order .how-order-button{
+	margin-top: 80px;
+	text-align: center;
+}
+
+.how-order-button span{
+	padding: 15px 30px 15px 30px;
+	border-radius: 20px;
+	font-size: 18px;
+	color: #fff;
+}
