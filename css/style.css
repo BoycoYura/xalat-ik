@@ -83,8 +83,57 @@ h2  {
     position: absolute;
     width: 50%;
     left: 25%;
-
 }
+.razmer-block   {
+    display: flex;
+    justify-content: center;
+}
+.btn-razmer {
+    width: 115px;
+    height: 30px;
+}
+.razmer {
+    text-align: center;
+    background-image: url(../img/our_xalats/btn_size.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 9px;
+    color: #ffffff;
+}
+.razmer-vkl {
+    padding: 9px 10px;
+}
+
+@media (max-width: 1920px) {
+    .circle-img {
+        width: 35%;
+        left: 33%;
+    }
+}
+@media (max-width: 1500px) {
+    .circle-img {
+        width: 40%;
+        left: 30%;
+    }
+}
+@media (max-width: 1366px) {
+    .circle-img {
+        width: 45%;
+        left: 28%;
+    }
+}
+@media (max-width: 1200px) {
+    .circle-img {
+        width: 50%;
+        left: 25%;
+    }
+}
+@media (max-width: 991px) {
+    .circle-img {
+        display: none;
+    }
+}
+
 /*OUR XALATS end*/
 
 
