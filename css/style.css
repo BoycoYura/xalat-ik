@@ -1,6 +1,36 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Gothic font';
+    src: url('../fonts/CenturyGothic-Bold.ttf') format('ttf'),
+    url('../fonts/CenturyGothic-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a,a:hover,a:visited,a:link{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Pacifico', cursive!important;
+}
+
+p{
+    font-family: 'Gothic font';
+}
+
+/* Fonts */
+
+
+/* Header */
+
 .menu-list{
     display: flex;
     justify-content: space-between;
+
+    text-transform: uppercase;
+    padding: 30px 0 25px;
 }
 
 h1,h2,h3,h4,h5,h6,a{
@@ -61,3 +91,110 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 /*OUR WORKS SECTION*/
+
+.menu-list .list-item{
+    font-size: 18px;
+    color: #7245be;
+    font-family: 'Gothic font'!important;
+}
+
+.menu-list .list-item.active,
+.menu-list .list-item{
+    color: #074fff;
+}
+
+.header{
+    background: url("../images/header_intro/header-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body{
+    background: bisque;
+}
+
+/* Header */
+
+/* Intro */
+.product-info-text{
+    color: white;
+}
+
+.product-info .product-info-text:first-child{
+    margin-bottom: 15px;
+}
+
+.intro-item-left{
+    display: flex;
+}
+
+.intro-item-left .product-info{
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+.intro-item-left .product-info-text{
+    font-size: 16px;
+}
+
+.call-part{
+    text-align: right;
+}
+
+.call-part .phone{
+    font-size: 20px;
+    color: white;
+    font-family: 'Gothic font'!important;
+}
+
+.call-part .whatsApp{
+    font-size: 16px;
+    color: white;
+    font-family: 'Gothic font'!important;
+}
+
+.call-part .call-button{
+    font-size: 16px;
+    color: white;
+    font-family: 'Gothic font'!important;
+    border: 1px solid #ffde00;
+    color: #ffde00;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.call-button .fa-phone-volume{
+    margin-right: 5px;
+}
+
+.intro-item-middle-text{
+    font-size: 72px;
+    color: #ffde00;
+}
+
+.intro-item-middle{
+    padding-top: 90px;
+}
+
+.intro{
+    padding-top: 50px;
+    background: url("../images/header_intro/main-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.intro-middle-subtext{
+    font-size: 26px;
+    color: white;
+
+}
+
+.intro-item-middle{
+    padding-bottom: 70px;
+}
+
+
+/* Intro */
+
