@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-
+    <script src="js/fontawesome-all.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
 
 </head>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-lg-6 intro-item-right">
                     <div class="call-part">
-                        <p class="phone">+7(926) 717-39-51</p>
+                        <p class="phone"><a href="">+7(926) 717-39-51</a></p>
                         <p class="whatsApp"><em>(WhatsApp/Viber)</em></p>
                         <a class="call-button" href=""><i class="fas fa-phone-volume"></i>заказать звонок</a>
                     </div>
@@ -61,6 +61,8 @@
                     <h2 class="intro-item-middle-text">Именной халат
                         с вышивкой</h2>
                     <p class="intro-middle-subtext">Создавайте дизайн вашего халата!</p>
+
+                    <a class="create-btn" href="">Создать дизайн халата</a>
                 </div>
             </div>
         </div>
@@ -476,9 +478,38 @@
 
         </div>
     </footer>
-</div>
+
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <script src="js/jquery.min.js"></script>
 <script src="own-coursel/owl.carousel.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/fontawesome-all.min.js"></script>
 
 
@@ -491,6 +522,7 @@
         "lt='' role='presentation'/>"],
     });
 });
+
 </script>
 
 

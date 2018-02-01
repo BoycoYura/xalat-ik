@@ -534,7 +534,7 @@ h2  {
 }
 
 .menu-list .list-item.active,
-.menu-list .list-item{
+.menu-list .list-item:hover{
     color: #074fff;
 }
 
@@ -576,7 +576,7 @@ body{
     text-align: right;
 }
 
-.call-part .phone{
+.call-part .phone a{
     font-size: 20px;
     color: white;
     font-family: 'Gothic font'!important;
@@ -586,6 +586,7 @@ body{
     font-size: 16px;
     color: white;
     font-family: 'Gothic font'!important;
+    padding-top: 2px;
 }
 
 .call-part .call-button{
@@ -595,13 +596,14 @@ body{
     border: 1px solid #ffde00;
     color: #ffde00;
     display: inline-block;
-    padding: 8px;
+    padding: 8px 10px;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 .call-button .fa-phone-volume{
     margin-right: 5px;
+    transform: rotate(-45deg);
 }
 
 .intro-item-middle-text{
@@ -616,19 +618,25 @@ body{
 .intro{
     padding-top: 50px;
     background: url("../images/header_intro/main-bg.png");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .intro-middle-subtext{
     font-size: 26px;
     color: white;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+
+.intro-item-middle .create-btn{
 
 }
 
 .intro-item-middle{
-    padding-bottom: 70px;
+    padding-bottom: 200px;
 }
+
 
 
 /* Intro */
