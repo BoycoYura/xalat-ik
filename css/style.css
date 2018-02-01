@@ -407,15 +407,40 @@ h2  {
     right: -70px;
 }
 
+
 @media (max-width: 775px){
   .owl-carousel{
-      width:600px !important;
+      width:500px !important;
 
   }
+
+ .owl-prev img{
+     width: 50px !important;
+
+ }
+ .owl-next img{
+     width: 50px!important;
+
+ }
+
+
+}
+
+
+@media (max-width: 720px){
     .owl-carousel{
-        width:90%;
+        width:60% !important;
     }
 
+}
+
+@media (max-width: 500px){
+    .owl-prev {
+        left:-80px !important;
+    }
+    .owl-next {
+        right:-50px!important;
+    }
 }
 
 /*OUR WORKS SECTION*/
