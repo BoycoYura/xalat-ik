@@ -544,7 +544,11 @@ body{
 
 .how-order{
 	color: #535353;
-	padding: 10px 0 160px 0;
+	padding: 10px 0 105px 0;
+}
+
+.how-order .row{
+    margin-top: 0px;
 }
 
 .how-order .how-order-background-left img{
@@ -617,4 +621,157 @@ body{
 	border-radius: 20px;
 	font-size: 18px;
 	color: #fff;
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
 }
+
+@media (max-width: 1850px){
+    .how-order-background-left{
+        left: 1%;
+    }
+    .how-order-background-right{
+        right: 5%;
+    }
+}
+
+@media (max-width: 1750px){
+    .how-order-background-left{
+        left: 0%;
+    }
+    .how-order-background-right{
+        right: 3%;
+    }
+}
+
+@media (max-width: 1700px){
+    .how-order .how-order-background-left img{
+        height: 750px;
+    }
+
+    .how-order .how-order-background-right img{
+        height: 700px;
+    }
+    .how-order-background-right {
+        right: 2%;
+    }
+    .how-order {
+        padding: 10px 0 20px 0;
+    }
+}
+
+@media (max-width: 1600px){
+    .how-order .how-order-background-left img{
+        height: 750px;
+    }
+
+    .how-order .how-order-background-right img{
+        height: 700px;
+    }
+    .how-order-background-right {
+        right: 2%;
+    }
+    .how-order {
+        padding: 10px 0 20px 0;
+    }
+}
+
+@media (max-width: 1500px){
+    .how-order .how-order-background-left img{
+        height: 650px;
+    }
+
+    .how-order .how-order-background-right img{
+        height: 600px;
+    }
+    .how-order-background-right {
+        right: 1%;
+    }
+    .how-order {
+        padding: 10px 0 0px 0;
+    }
+}
+
+@media (max-width: 1500px){
+    .how-order .how-order-background-left img{
+        height: 550px;
+        margin-top: 40px;
+    }
+
+    .how-order .how-order-background-right img{
+        height: 500px;
+        margin-top: 40px;
+    }
+    .how-order-background-right {
+        right: 1%;
+    }
+
+}
+
+@media (max-width: 1400px){
+     .how-order .how-order-background-left img{
+       display: none;
+    }
+
+    .how-order .how-order-background-right img{
+         display: none;
+    }
+}
+
+/* md */
+@media (max-width: 1200px){
+    .how-order-item:hover .how-order-item-img-hover img{
+        margin-left: 15px;
+    }
+    .how-order-item .how-order-item-img-hover img{
+        /*display: block;*/
+    }
+
+}
+
+
+/* sm */
+@media (max-width: 992px){
+    .how-order-item-img-hover{
+        text-align: center;
+    }
+
+    .how-order-item:hover .how-order-item-img-hover img{
+        margin-left: 215px;
+    }
+
+}
+
+
+/* xs */
+@media (max-width: 768px){
+    .how-order-item:hover .how-order-item-img-hover img{
+        margin: -265px auto 0 auto;
+    }
+
+}
+
+/* mobile */
+@media (max-width: 480px){   
+    .how-order-item-img img{
+        height: 200px;
+    }
+    .how-order-item:hover .how-order-item-img-hover img{
+        margin: -200px auto 0 auto;
+    }
+    .how-order .how-order-item-head {
+        margin: 0 0 5px 0;
+    }
+    .how-order .how-order-item-description {
+        margin-bottom: 8px;
+        line-height: 1.2;
+    }
+    .how-order .how-order-button {
+        margin-top: 40px;
+    }
+}
+
+/*
+      how-order
+    (Как заказать)
+  (завершение секции)
+*/
