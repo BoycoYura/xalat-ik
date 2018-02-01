@@ -1,7 +1,38 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Gothic font';
+    src: url('../fonts/CenturyGothic-Bold.ttf') format('ttf'),
+    url('../fonts/CenturyGothic-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a,a:hover,a:visited,a:link{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Pacifico', cursive!important;
+}
+
+p{
+    font-family: 'Gothic font';
+}
+
+/* Fonts */
+
+
+/* Header */
+
 .menu-list{
     display: flex;
     justify-content: space-between;
+
+    text-transform: uppercase;
+    padding: 30px 0 25px;
 }
+
 
 h1,h2,h3,h4,h5,h6,a{
     font-family: 'Pacifico', cursive!important;
@@ -18,27 +49,26 @@ h1,h2,h3,h4,h5,h6,a{
 
 .katalog_item {
 	margin-bottom: 116px;
-}
-
-.vertical_align_block {
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
+	text-align: center;
 }
 
 .katalog_item_header {
 	height: 87px;
 	text-align: center;
-	border-radius: 10px 10px 0 0;
-	background: #ccc;
-	vertical-align: middle;
+	border-radius: 25px 25px 0 0;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .katalog_item_header_title {
 	display: inline-block;
 	vertical-align: middle;
 
+	font-family: 'Pacifico', cursive;
 	font-size: 24px;
+	line-height: 28px;
 	text-align: center;
 	color: #7044c0;
 }
@@ -52,19 +82,21 @@ h1,h2,h3,h4,h5,h6,a{
 	position: relative;
 
 	height: 104px;
-	border-radius: 0 0 10px 10px;
-	background: #ccc;
+	border-radius: 0 0 25px 25px;
+	background: white;
 	text-align: center;
 }
 
 .katalog_item_footer_price {
-	padding-top: 30px;
+	padding-top: 26px;
+
 }
 
 .katalog_item_footer_price_text {
 	margin-right: 7px;
 	font-size: 18px;
-	font-weight: bold;
+	letter-spacing: 1px;
+
 	color: #363a37;
 }
 
@@ -77,13 +109,281 @@ h1,h2,h3,h4,h5,h6,a{
 
 .katalog_item_footer_price_currency {
 	color: #5c3494;
+	font-size: 20px;
 }
 
 .katalog_item_footer_link {
-	/*position: absolute;*/
+	display: inline-block;
+	position: relative;
+	top: -33px;
+	z-index: 2;
+
+	font-size: 18px;
+
+	letter-spacing: 1px;
 	color: white;
-	padding: 16px 87px;
+	padding: 5% 25% 7%;
 	background-image: linear-gradient(to bottom, #094efe, #7544bd);
-	border-radius: ;
+	border-radius: 25px;
+	box-shadow: 0 0 25px rgba(116,68,189,0.56);
 }
+
+.katalog_item_footer_link:hover {
+	color: white;
+	text-decoration: none;
+}
+
+/* modal window */
+
+.modal_window {
+	position: relative;
+	width: 1174px;
+	margin: 0 auto;
+	padding: 54px 0 50px;
+	border-radius: 25px;
+	border: 5px solid #7643bc;
+	background: white;
+
+/*	background: white;
+	border-image: linear-gradient(0deg, #074ffe, #7643bc) 30 round;
+	border-image-slice: 1;*/
+}
+
+.modal_window_close {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	width: 24px;
+	height: 24px;
+	background: url('../img/modal_window_close.png') no-repeat 0 0;
+}
+
+.modal_window_close:hover {
+	cursor: pointer;
+}
+
+.modal_window_image {
+	position: relative;
+	padding-left: 90px;
+	text-align: center;
+}
+
+.modal_window_larger_photo {
+	margin-top: 40px;
+	padding: 19px 23px;
+
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+
+	color: #8a60c6;
+	background: #ffde00;
+	border: none;
+	border-radius: 25px;
+}
+
+.modal_window_larger_photo:hover {
+	cursor: pointer;
+}
+
+.modal_window_arrow {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -190%);
+
+	width: 35px;
+	height: 36px;
+	z-index: 1;
+}
+
+.modal_window_arrow:hover {
+	cursor: pointer;
+}
+
+.arrow_left {
+	left: 42px;
+	background: url('../img/modal_window_arrow_left_not_active.png') no-repeat 0 0;
+}
+
+.arrow_right {
+	right: -40px;
+	background: url('../img/modal_window_arrow_right_active.png') no-repeat 0 0;
+}
+
+.modal_window_title {
+	margin-bottom: 46px;
+
+	font-family: 'Pacifico', cursive;
+	font-size: 36px;
+	letter-spacing: 2.5px;
+
+	color: #7044c0;
+}
+
+.modal_window_content_item {
+	padding-left: 66px;
+	padding-right: 52px;
+}
+
+.modal_window_content_table {
+	font-family: 'Gothic font';
+	font-size: 16px;
+	color: #535353;
+}
+
+.table_bold {
+	font-weight: bold;
+}
+
+.modal_window_content_item > .row {
+	margin-bottom: 23px;
+}
+
+.modal_window_content_item .row-4 {
+	margin-bottom: 13px;
+}
+
+.modal_window_zirochka {
+	color: #7044c0;
+}
+
+.modal_window_content_item .row-6 {
+	margin-top: 56px;
+
+	font-size: 16px;
+	font-style: italic;
+	line-height: 24px;
+}
+
+.modal_window_content_text {
+	color: #535353;
+}
+
+.content_text_footer {
+	margin-top: 66px;
+
+	font-weight: bold;
+	font-style: italic;
+}
+
+.modal_window_create_design {
+	padding: 19px 23px;
+
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+	color: white;
+
+	background-image: linear-gradient(to bottom, #094efe, #7544bd);
+	border: none;
+	border-radius: 25px;
+	box-shadow: 0 0 25px rgba(116,68,189,0.56);
+}
+
+
 /*----------------------------------*/
+
+.menu-list .list-item{
+    font-size: 18px;
+    color: #7245be;
+    font-family: 'Gothic font'!important;
+}
+
+.menu-list .list-item.active,
+.menu-list .list-item{
+    color: #074fff;
+}
+
+.header{
+    background: url("../images/header_intro/header-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body{
+    background: bisque;
+}
+
+/* Header */
+
+/* Intro */
+.product-info-text{
+    color: white;
+}
+
+.product-info .product-info-text:first-child{
+    margin-bottom: 15px;
+}
+
+.intro-item-left{
+    display: flex;
+}
+
+.intro-item-left .product-info{
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+.intro-item-left .product-info-text{
+    font-size: 16px;
+}
+
+.call-part{
+    text-align: right;
+}
+
+.call-part .phone{
+    font-size: 20px;
+    color: white;
+    font-family: 'Gothic font'!important;
+}
+
+.call-part .whatsApp{
+    font-size: 16px;
+    color: white;
+    font-family: 'Gothic font'!important;
+}
+
+.call-part .call-button{
+    font-size: 16px;
+    color: white;
+    font-family: 'Gothic font'!important;
+    border: 1px solid #ffde00;
+    color: #ffde00;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.call-button .fa-phone-volume{
+    margin-right: 5px;
+}
+
+.intro-item-middle-text{
+    font-size: 72px;
+    color: #ffde00;
+}
+
+.intro-item-middle{
+    padding-top: 90px;
+}
+
+.intro{
+    padding-top: 50px;
+    background: url("../images/header_intro/main-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.intro-middle-subtext{
+    font-size: 26px;
+    color: white;
+
+}
+
+.intro-item-middle{
+    padding-bottom: 70px;
+}
+
+
+/* Intro */
+
