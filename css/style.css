@@ -44,6 +44,10 @@ h1,h2,h3,h4,h5,h6,a{
 
 /*--------------Katalog-------------*/
 
+.katalog{
+    position: relative;
+}
+
 .katalog_title {
 	padding: 76px 0;
 
@@ -588,12 +592,12 @@ h1,h2,h3,h4,h5,h6,a{
 /* delivery section end */
 
 
-h2  {
-    font-size: 48px;
-    font-weight: 400;
-    color: #535353;
-    text-align: center;
-}
+/*h2  {*/
+    /*font-size: 48px;*/
+    /*font-weight: 400;*/
+    /*color: #535353;*/
+    /*text-align: center;*/
+/*}*/
 /*OUR XALATS satart*/
 .caption    {
     padding-bottom: 80px;
@@ -680,11 +684,7 @@ h2  {
         left: 25%;
     }
 }
-@media (max-width: 991px) {
-    .circle-img {
-        display: none;
-    }
-}
+
 
 /*OUR XALATS end*/
 
@@ -698,7 +698,7 @@ h2  {
 
 }
 
-.row{ margin-top: 60px;  }
+/*.row{ margin-top: 60px;  }*/
 
 .owl-carousel {
  position:relative;
@@ -884,8 +884,8 @@ h2  {
 
 .intro{
     padding-top: 50px;
-    background: url("../images/header_intro/main-bg.png");
-    background-size: cover;
+    background: url("../images/header_intro/main-bg-two.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -902,6 +902,39 @@ h2  {
 
 .intro-item-middle{
     padding-bottom: 200px;
+}
+
+.create-btn{
+    background: linear-gradient(to bottom, rgba(7,77,255,0.95) 0%, rgba(7,77,255,1) 0%, rgba(118,68,188,1) 56%, rgba(118,68,188,1) 100%);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+
+.create-btn:hover{
+    color: white;
+}
+
+.share-block{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: -200px;
+    left: 44%;
+}
+
+.share-text{
+    position: absolute;
+    top: 60px;
+    color: #7044c0;
+    font-size: 24px;
+    left: 40px;
+    text-align: center;
+}
+
+.lili-fone{
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
 }
 
 
@@ -1108,6 +1141,10 @@ h2  {
         /*display: block;*/
     }
 
+    .intro{
+        background-size: cover;
+    }
+
 }
 
 
@@ -1121,6 +1158,55 @@ h2  {
         margin-left: 215px;
     }
 
+}
+
+@media (max-width: 991px) {
+    .circle-img {
+        display: none;
+    }
+
+    .intro-item-middle {
+        padding-bottom: 250px;
+    }
+
+    .share-block {
+        top: -190px;
+        width: 100%;
+    }
+
+    .intro-item-left .product-info{
+        margin-left: 0;
+    }
+
+    .intro-item-left {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .call-part{
+        text-align: center!important;
+        margin-top: 40px;
+    }
+
+    .intro-item-left{
+        justify-content: center;
+    }
+
+    .intro-item-middle{
+        text-align: center;
+    }
+
+    .call-part .phone a {
+        font-size: 30px!important;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+
+    .call-part .call-button {
+        padding: 15px 15px;
+        font-size: 22px;
+        margin-top: 20px;
+    }
 }
 
 
