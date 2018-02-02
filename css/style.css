@@ -1213,6 +1213,10 @@ h1,h2,h3,h4,h5,h6,a{
     top: -60px;
 }
 
+.modal-backdrop{
+    background-color: #7044c0c4;
+}
+
 @media (max-width: 991px) {
     .circle-img {
         display: none;
