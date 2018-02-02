@@ -309,17 +309,26 @@ h1,h2,h3,h4,h5,h6,a{
 	box-shadow: 0 0 25px rgba(116,68,189,0.56);
 }
 
+.modal_window_create_design:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .modal_window_footer {
     text-align: center;
     color: #7044c0;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1460px) {
     .modal-dialog {max-width: 80%;}
 }
 
 @media (max-width: 1150px) {
     .modal-dialog {max-width: 90%;}
+}
+
+@media (max-width: 1050px) {
+    .modal-dialog {max-width: 94%;}
 }
 
 @media (max-width: 991px) {
