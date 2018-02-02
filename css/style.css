@@ -37,10 +37,15 @@ h1,h2,h3,h4,h5,h6,a{
     font-family: 'Pacifico', cursive!important;
 }
 
+.main-div{
+    background: url("../images/main-fone.png");
+    background-size: 100% 100%;
+}
+
 /*--------------Katalog-------------*/
 
 .katalog_title {
-	margin: 76px 0;
+	padding: 76px 0;
 
 	font-size: 48px;
 	text-align: center;
@@ -793,10 +798,6 @@ h2  {
     background: url("../images/header_intro/header-bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-
-body{
-    background: bisque;
 }
 
 /* Header */
