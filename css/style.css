@@ -8,6 +8,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gothic Italic';
+    src: url('../fonts/CenturyGothic-Italic.ttf') format('ttf'),
+    url('../fonts/CenturyGothic-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gothic Regular';
+    src: url('../fonts/CenturyGothic.ttf') format('ttf'),
+    url('../fonts/CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 a,a:hover,a:visited,a:link{
     text-decoration: none;
 }
@@ -683,6 +699,7 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 16px;
     font-weight: 400;
     color: #181e1a;
+    font-family: 'Gothic Regular'!important;
 }
 .center-woman{
     width: 100%;
@@ -873,7 +890,7 @@ h1,h2,h3,h4,h5,h6,a{
 
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 20;
 }
 
 /* Header */
@@ -891,6 +908,12 @@ h1,h2,h3,h4,h5,h6,a{
     display: flex;
 }
 
+.intro-sub-head{
+    font-size: 26px;
+    color: white;
+    padding-bottom: 80px;
+}
+
 .intro-item-left .product-info{
     margin-left: 65px;
     margin-top: 20px;
@@ -898,6 +921,10 @@ h1,h2,h3,h4,h5,h6,a{
 
 .intro-item-left .product-info-text{
     font-size: 16px;
+}
+
+.product-info-text.first{
+    font-family: 'Gothic Italic'!important;
 }
 
 .call-part{
@@ -913,7 +940,7 @@ h1,h2,h3,h4,h5,h6,a{
 .call-part .whatsApp{
     font-size: 16px;
     color: white;
-    font-family: 'Gothic font'!important;
+    font-family: 'Gothic Italic'!important;
     padding-top: 2px;
 }
 
@@ -937,11 +964,17 @@ h1,h2,h3,h4,h5,h6,a{
 .intro-item-middle-text{
     font-size: 72px;
     color: #ffde00;
-    padding-bottom: 90px;
+    padding-bottom: 15px;
 }
 
 .intro-item-middle{
     padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.share-block img{
+    position: relative;
+    bottom: 50px;
 }
 
 .intro{
@@ -1031,7 +1064,7 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 .how-order .how-order-item-contact-regular{
-	font-weight: normal;
+    font-family: 'Gothic Regular'!important;
 }
 
 .how-order .how-order-item-head{
