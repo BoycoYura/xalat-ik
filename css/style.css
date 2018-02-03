@@ -861,10 +861,7 @@ h1,h2,h3,h4,h5,h6,a{
     padding: 10px 50px;
     border-radius: 50px;
     display: inline-block;
-    /* bottom: -31px !important; */
-    /* margin-left: 20px; */
-    margin: 70px 130px;
-
+    margin: 70px 80px;
 }
 
 
