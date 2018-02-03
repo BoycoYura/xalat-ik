@@ -18,7 +18,26 @@
 </head>
 <body>
 <div class="main-page-wrapper">
-        <header id="header" class="header">
+        <header id="header" class="header ">
+    <div class="container">
+        <nav class="site-navigation">
+            <div class="mobile-menu">
+                <span class="mobile-burger"> <i class="fas fa-bars "></i></span>
+            </div>
+            <ul class="menu-list hide">
+                <li><a class="list-item active" href="">Каталог</a></li>
+                <li><a class="list-item" href="">Наши халаты</a></li>
+                <li><a class="list-item" href="">Как заказать</a></li>
+                <li><a class="list-item" href="">Фото работ</a></li>
+                <li><a class="list-item" href="">Доставка</a></li>
+                <li><a class="list-item" href="">Отзывы</a></li>
+                <li><a class="list-item" href="">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        <header id="header-move" class="header desktop-hide">
         <div class="container">
             <nav class="site-navigation">
                 <div class="mobile-menu">
@@ -75,7 +94,7 @@
     </section>
 
     <div class="main-div">
-        <section class="katalog">
+        <section id="basic-waypoint" class="katalog">
             <div class="container">
                 <h2 class="katalog_title">Каталог</h2>
 
@@ -355,7 +374,7 @@
 
                 <h2 id="ourText"> Наши Работы</h2>
                 <div class="row">
-                    <div class="owl-carousel picture  col-md-10">
+                <div class="owl-carousel picture  col-md-10">
                         <div><img src="img/car.png"></div>
                         <div> Your Content</div>
                         <div> Your Content</div>
@@ -379,7 +398,6 @@
                     </div>
 
                 </div>
-            </div>
             </div>
         </section>
 
@@ -701,6 +719,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/fontawesome-all.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
 
 <script>$(document).ready(function () {
     $('.owl-carousel').owlCarousel({
@@ -711,7 +730,21 @@
         "lt='' role='presentation'/>"],
     });
 
+    // toggle "navbar-no-bg" class
 
+
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('basic-waypoint'),
+        handler: function(direction) {
+            if( direction === 'down') {
+                $("#header-move").fadeIn( "slow" );
+            }
+            else if( direction === 'up'){
+                $("#header-move").fadeOut("slow");
+            }
+        }
+    });
 //    var summ = $(".our-works .owl-stage").index($(".active")).length;
 //    alert(summ);
 //
