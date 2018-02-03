@@ -8,6 +8,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gothic Italic';
+    src: url('../fonts/CenturyGothic-Italic.ttf') format('ttf'),
+    url('../fonts/CenturyGothic-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gothic Regular';
+    src: url('../fonts/CenturyGothic.ttf') format('ttf'),
+    url('../fonts/CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 a,a:hover,a:visited,a:link{
     text-decoration: none;
 }
@@ -373,7 +389,7 @@ h1,h2,h3,h4,h5,h6,a{
 
 /* contact section */
 .wrapper-all-contacts{
-    margin-top: 90px;
+    margin: 90px 0 105px 0;
     height:640px;
 }
 .contacts h2{
@@ -421,7 +437,7 @@ h1,h2,h3,h4,h5,h6,a{
 .contact-time-work{
     float: right;
     border-radius: 40px;
-    width:150px;
+    width:175px;
     height:40px;
     background-color: #ffde00;
 }
@@ -577,6 +593,7 @@ h1,h2,h3,h4,h5,h6,a{
     text-align: center;
     font-size: 48px;
     color: #535353;
+    margin-top: 130px;
 }
 
 .wrapper-delivery-content{
@@ -695,6 +712,7 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 16px;
     font-weight: 400;
     color: #181e1a;
+    font-family: 'Gothic Regular'!important;
 }
 /*.xalats_deskription:before {
     content: "";
@@ -813,7 +831,7 @@ h1,h2,h3,h4,h5,h6,a{
 
 /*.row{ margin-top: 60px;  }*/
 
-.owl-carousel {
+.our-works .owl-carousel {
  position:relative;
     display: block !important;
     padding-top: 20px;
@@ -839,7 +857,7 @@ h1,h2,h3,h4,h5,h6,a{
 
 .social-picture{
     text-align: right;
-    margin: 65px -33px;
+    margin: 65px -63px;
 }
 
 .social-picture span{
@@ -850,6 +868,10 @@ h1,h2,h3,h4,h5,h6,a{
    background: #ffde00;
     padding: 10px 50px;
     border-radius: 50px;
+    display: inline-block;
+    /* bottom: -31px !important; */
+    /* margin-left: 20px; */
+    margin: 70px 130px;
 
 }
 
@@ -871,6 +893,21 @@ h1,h2,h3,h4,h5,h6,a{
     position:absolute;
     right: -70px;
 }
+
+
+@media (max-width: 775px){
+    .owl-prev img{
+
+
+    }
+    .owl-next img{
+        width: 50px!important;
+
+    }
+
+
+}
+
 
 
 @media (max-width: 775px){
@@ -929,7 +966,7 @@ h1,h2,h3,h4,h5,h6,a{
 
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 20;
 }
 
 /* Header */
@@ -947,6 +984,12 @@ h1,h2,h3,h4,h5,h6,a{
     display: flex;
 }
 
+.intro-sub-head{
+    font-size: 26px;
+    color: white;
+    padding-bottom: 80px;
+}
+
 .intro-item-left .product-info{
     margin-left: 65px;
     margin-top: 20px;
@@ -954,6 +997,10 @@ h1,h2,h3,h4,h5,h6,a{
 
 .intro-item-left .product-info-text{
     font-size: 16px;
+}
+
+.product-info-text.first{
+    font-family: 'Gothic Italic'!important;
 }
 
 .call-part{
@@ -969,7 +1016,7 @@ h1,h2,h3,h4,h5,h6,a{
 .call-part .whatsApp{
     font-size: 16px;
     color: white;
-    font-family: 'Gothic font'!important;
+    font-family: 'Gothic Italic'!important;
     padding-top: 2px;
 }
 
@@ -993,11 +1040,17 @@ h1,h2,h3,h4,h5,h6,a{
 .intro-item-middle-text{
     font-size: 72px;
     color: #ffde00;
-    margin-bottom: 90px;
+    padding-bottom: 15px;
 }
 
 .intro-item-middle{
     padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.share-block img{
+    position: relative;
+    bottom: 50px;
 }
 
 .intro{
@@ -1059,7 +1112,7 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 .how-order .row{
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .how-order .how-order-background-left img{
@@ -1087,7 +1140,7 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 .how-order .how-order-item-contact-regular{
-	font-weight: normal;
+    font-family: 'Gothic Regular'!important;
 }
 
 .how-order .how-order-item-head{
@@ -1136,6 +1189,24 @@ h1,h2,h3,h4,h5,h6,a{
     font-family: 'Pacifico', cursive;
 }
 
+/* footer */
+footer{
+    height: 110px;
+    background-color: #ecf1ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright_text{
+    color: #7644bc;
+    font-family: 'Gothic font';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+/* footer end */
+
 @media (max-width: 1850px){
     .how-order-background-left{
         left: 1%;
@@ -1147,7 +1218,7 @@ h1,h2,h3,h4,h5,h6,a{
 
 @media (max-width: 1750px){
     .how-order-background-left{
-        left: 0%;
+        left: 0;
     }
     .how-order-background-right{
         right: 3%;
@@ -1198,7 +1269,7 @@ h1,h2,h3,h4,h5,h6,a{
         right: 1%;
     }
     .how-order {
-        padding: 10px 0 0px 0;
+        padding: 10px 0 0 0;
     }
 }
 
