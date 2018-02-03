@@ -49,15 +49,20 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 .katalog_title {
-	padding: 76px 0;
+	padding: 76px 0 58px;
 
 	font-size: 48px;
 	text-align: center;
 }
 
 .katalog_item {
-	margin-bottom: 116px;
+	margin-bottom: 56px;
 	text-align: center;
+}
+
+.katalog_item_shadow {
+    box-shadow: 0 0 30px rgba(116,68,189,0.26);
+    border-radius: 25px;
 }
 
 .katalog_item_header {
@@ -139,6 +144,7 @@ h1,h2,h3,h4,h5,h6,a{
 .katalog_item_footer_link:hover {
 	color: white;
 	text-decoration: none;
+    outline: none;
 }
 
 /* modal window */
@@ -668,6 +674,8 @@ h1,h2,h3,h4,h5,h6,a{
     padding-bottom: 130px;
 }
 .features img   {
+    position: relative;
+    z-index: 2;
     margin-left: -45px;
     float: left;
 }
@@ -679,11 +687,59 @@ h1,h2,h3,h4,h5,h6,a{
     font-weight: 800;
     color: #181e1a;
 }
+
 .xalats_deskription {
+    position: relative;
+    padding-top: 8px;
+
     font-size: 16px;
     font-weight: 400;
     color: #181e1a;
 }
+/*.xalats_deskription:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    height: 1px;
+    width: 105px;
+    background: #f9f5fe;
+    z-index: 1;
+}
+
+.xal-descr-left:before {
+    left: 0;
+}
+
+.xal-descr-right:before {
+    right: 135px;
+}
+
+.xal-descr-left-1:before {
+    width: 245px;
+}
+
+.xal-descr-left-2:before {
+    width: 195px;
+}
+
+.xal-descr-left-3:before {
+    width: 310px; 
+}
+
+.xal-descr-right-1:before {
+    width: 175px;
+}
+
+.xal-descr-right-2:before {
+    width: 130px;   
+}
+
+.xal-descr-right-3:before {
+    width: 200px;  
+}
+*/
+
+
 .center-woman{
     width: 100%;
 
