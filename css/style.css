@@ -1194,6 +1194,13 @@ footer{
     font-weight: bold;
     text-align: center;
 }
+
+.copyright_red{
+    color: #d01b1b;
+}
+.copyright_box{
+    color: #252020;
+}
 /* footer end */
 
 @media (max-width: 1850px){
