@@ -747,10 +747,13 @@ h1,h2,h3,h4,h5,h6,a{
 .our-works h2{
     text-align: center;
     margin-top:145px;
-    font-size: 40px;
+    font-size: 60px;
     color:#535353;
+    letter-spacing:5px;
 
 }
+
+
 
 /*.row{ margin-top: 60px;  }*/
 
@@ -764,6 +767,7 @@ h1,h2,h3,h4,h5,h6,a{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-bottom: 20px;
+    margin-top: 80px;
 }
 
 
@@ -777,13 +781,12 @@ h1,h2,h3,h4,h5,h6,a{
 
 }
 
-.social{
-    margin-top: 65px;
-    text-align: center;
-
+.social-picture{
+    text-align: right;
+    margin: 65px -33px;
 }
 
-.social span{
+.social-picture span{
     padding: 15px;
 }
 
