@@ -367,7 +367,7 @@ h1,h2,h3,h4,h5,h6,a{
 
 /* contact section */
 .wrapper-all-contacts{
-    margin-top: 90px;
+    margin: 90px 0 105px 0;
     height:640px;
 }
 .contacts h2{
@@ -415,7 +415,7 @@ h1,h2,h3,h4,h5,h6,a{
 .contact-time-work{
     float: right;
     border-radius: 40px;
-    width:150px;
+    width:175px;
     height:40px;
     background-color: #ffde00;
 }
@@ -957,6 +957,7 @@ h1,h2,h3,h4,h5,h6,a{
 .intro-item-middle-text{
     font-size: 72px;
     color: #ffde00;
+    padding-bottom: 90px;
 }
 
 .intro-item-middle{
@@ -1022,7 +1023,7 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 .how-order .row{
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .how-order .how-order-background-left img{
@@ -1099,6 +1100,24 @@ h1,h2,h3,h4,h5,h6,a{
     font-family: 'Pacifico', cursive;
 }
 
+/* footer */
+footer{
+    height: 110px;
+    background-color: #ecf1ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright_text{
+    color: #7644bc;
+    font-family: 'Gothic font';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+/* footer end */
+
 @media (max-width: 1850px){
     .how-order-background-left{
         left: 1%;
@@ -1110,7 +1129,7 @@ h1,h2,h3,h4,h5,h6,a{
 
 @media (max-width: 1750px){
     .how-order-background-left{
-        left: 0%;
+        left: 0;
     }
     .how-order-background-right{
         right: 3%;
@@ -1161,7 +1180,7 @@ h1,h2,h3,h4,h5,h6,a{
         right: 1%;
     }
     .how-order {
-        padding: 10px 0 0px 0;
+        padding: 10px 0 0 0;
     }
 }
 
