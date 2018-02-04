@@ -56,7 +56,66 @@ h1,h2,h3,h4,h5,h6,a{
 .main-div{
     background: url("../images/main-fone.png");
     background-size: 100% 100%;
+    height: 6900px;
 }
+
+/*--------------Reviews-------------*/
+
+.reviews_title{
+    font-size: 48px;
+    color: #535353;
+    text-align: center;
+}
+
+.reviews{
+    margin-top: 120px;
+    margin-bottom: 160px;
+}
+
+.reviews-carosel{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.reviews-carosel .owl-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.review-header{
+    font-family: 'Pacifico', cursive!important;
+    font-size: 18px;
+    text-align: center;
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.reviews-body{
+    font-family: 'Gothic Italic';
+    font-size: 14px;
+    color: #363a37;
+    padding: 40px 20px;
+    line-height: 20px;
+    background: white;
+    border-radius:  0px 0px 20px 20px;
+}
+
+
+.reviews-btn{
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+}
+
+.add-review{
+    color: #8a60c6!important;
+    background: #ffde00!important;
+    margin-right: 20%;
+}
+
+
+/*--------------Reviews-------------*/
 
 /*--------------Katalog-------------*/
 
@@ -65,15 +124,20 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 .katalog_title {
-	padding: 76px 0;
-
+	padding: 15px 0 58px;
+    color: #535353;
 	font-size: 48px;
 	text-align: center;
 }
 
 .katalog_item {
-	margin-bottom: 116px;
+	margin-bottom: 56px;
 	text-align: center;
+}
+
+.katalog_item_shadow {
+    box-shadow: 0 0 30px rgba(116,68,189,0.26);
+    border-radius: 25px;
 }
 
 .katalog_item_header {
@@ -155,6 +219,7 @@ h1,h2,h3,h4,h5,h6,a{
 .katalog_item_footer_link:hover {
 	color: white;
 	text-decoration: none;
+    outline: none;
 }
 
 /* modal window */
@@ -678,13 +743,22 @@ h1,h2,h3,h4,h5,h6,a{
     padding-left: 100px;
 }
 .our-xalats {
-    padding: 140px 0 60px;
+    padding: 80px 0 60px;
 }
+
+.our-xalats-header{
+    text-align: center;
+    font-size: 48px;
+    color: #535353;
+}
+
 .features   {
     font-family: 'Gothic font'!important;
     padding-bottom: 130px;
 }
 .features img   {
+    position: relative;
+    z-index: 2;
     margin-left: -45px;
     float: left;
 }
@@ -696,12 +770,61 @@ h1,h2,h3,h4,h5,h6,a{
     font-weight: 800;
     color: #181e1a;
 }
+
 .xalats_deskription {
+    position: relative;
+    padding-top: 8px;
+    white-space: nowrap;
+    line-height: 25px;
     font-size: 16px;
     font-weight: 400;
     color: #181e1a;
     font-family: 'Gothic Regular'!important;
 }
+/*.xalats_deskription:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    height: 1px;
+    width: 105px;
+    background: #f9f5fe;
+    z-index: 1;
+}
+
+.xal-descr-left:before {
+    left: 0;
+}
+
+.xal-descr-right:before {
+    right: 135px;
+}
+
+.xal-descr-left-1:before {
+    width: 245px;
+}
+
+.xal-descr-left-2:before {
+    width: 195px;
+}
+
+.xal-descr-left-3:before {
+    width: 310px; 
+}
+
+.xal-descr-right-1:before {
+    width: 175px;
+}
+
+.xal-descr-right-2:before {
+    width: 130px;   
+}
+
+.xal-descr-right-3:before {
+    width: 200px;  
+}
+*/
+
+
 .center-woman{
     width: 100%;
 
@@ -790,14 +913,6 @@ h1,h2,h3,h4,h5,h6,a{
 
 
 
-.arrow-right{
-    float:left;
-
-}
-.arrow-left{
-    float:right;
-
-}
 
 .social-picture{
     text-align: right;
@@ -813,14 +928,12 @@ h1,h2,h3,h4,h5,h6,a{
     padding: 10px 50px;
     border-radius: 50px;
     display: inline-block;
-    /* bottom: -31px !important; */
-    /* margin-left: 20px; */
-    margin: 70px 130px;
-
+    margin: 70px 80px;
 }
 
 
-.owl-nav{
+.our-works .owl-nav,
+.reviews-carosel .owl-nav{
     display: flex;
 
     justify-content: space-between;
@@ -829,22 +942,29 @@ h1,h2,h3,h4,h5,h6,a{
     top: 40%;
 }
 
-.owl-prev{
+.our-works .owl-prev{
     position:absolute;
     left: -100px;
 }
-.owl-next{
+
+.reviews-carosel .owl-prev{
+    position:absolute;
+    left: -70px;
+}
+
+.our-works .owl-next,
+.reviews-carosel .owl-next{
     position:absolute;
     right: -70px;
 }
 
 
 @media (max-width: 775px){
-    .owl-prev img{
+    .our-works .owl-prev img{
 
 
     }
-    .owl-next img{
+    .our-works .owl-next img{
         width: 50px!important;
 
     }
@@ -855,16 +975,16 @@ h1,h2,h3,h4,h5,h6,a{
 
 
 @media (max-width: 775px){
-  .owl-carousel{
+    .our-works  .owl-carousel{
       width:500px !important;
 
   }
 
- .owl-prev img{
+    .our-works .owl-prev img{
      width: 50px !important;
 
  }
- .owl-next img{
+    .our-works .owl-next img{
      width: 50px!important;
 
  }
@@ -874,17 +994,17 @@ h1,h2,h3,h4,h5,h6,a{
 
 
 @media (max-width: 720px){
-    .owl-carousel{
+    .our-works .owl-carousel{
         width:60% !important;
     }
 
 }
 
 @media (max-width: 500px){
-    .owl-prev {
+    .our-works .owl-prev {
         left:-80px !important;
     }
-    .owl-next {
+    .our-works .owl-next {
         right:-50px!important;
     }
 }
@@ -1157,6 +1277,13 @@ footer{
     font-weight: bold;
     text-align: center;
 }
+
+.copyright_red{
+    color: #d01b1b;
+}
+.copyright_box{
+    color: #252020;
+}
 /* footer end */
 
 @media (max-width: 1850px){
@@ -1305,6 +1432,18 @@ footer{
         display: none;
     }
 
+    .intro{
+        padding-bottom: 100px;
+    }
+
+    .main-div{
+        background: lavender;
+        height: auto;
+        position: relative;
+        top: -100px;
+
+    }
+
     .menu-list li{
         padding-top: 15px;
         padding-bottom: 15px;
@@ -1345,7 +1484,8 @@ footer{
     }
 
     .share-block {
-        top: -190px;
+        position: relative;
+        top: 25px;
         width: 100%;
     }
 
