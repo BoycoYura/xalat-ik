@@ -25,13 +25,13 @@
                 <span class="mobile-burger"> <i class="fas fa-bars "></i></span>
             </div>
             <ul class="menu-list hide">
-                <li><a class="list-item active" href="">Каталог</a></li>
-                <li><a class="list-item" href="">Наши халаты</a></li>
-                <li><a class="list-item" href="">Как заказать</a></li>
-                <li><a class="list-item" href="">Фото работ</a></li>
-                <li><a class="list-item" href="">Доставка</a></li>
-                <li><a class="list-item" href="">Отзывы</a></li>
-                <li><a class="list-item" href="">Контакты</a></li>
+                    <li><a class="list-item active" href="#katalog">Каталог</a></li>
+                    <li><a class="list-item" href="#our-xalats">Наши халаты</a></li>
+                    <li><a class="list-item" href="#how-order">Как заказать</a></li>
+                    <li><a class="list-item" href="#our-works">Фото работ</a></li>
+                    <li><a class="list-item" href="#delivery">Доставка</a></li>
+                    <li><a class="list-item" href="#reviews">Отзывы</a></li>
+                    <li><a class="list-item" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </div>
@@ -44,19 +44,19 @@
                     <span class="mobile-burger"> <i class="fas fa-bars "></i></span>
                 </div>
                 <ul class="menu-list hide">
-                    <li><a class="list-item active" href="">Каталог</a></li>
-                    <li><a class="list-item" href="">Наши халаты</a></li>
-                    <li><a class="list-item" href="">Как заказать</a></li>
-                    <li><a class="list-item" href="">Фото работ</a></li>
-                    <li><a class="list-item" href="">Доставка</a></li>
-                    <li><a class="list-item" href="">Отзывы</a></li>
-                    <li><a class="list-item" href="">Контакты</a></li>
+                    <li><a class="list-item active" href="#katalog">Каталог</a></li>
+                    <li><a class="list-item" href="#our-xalats">Наши халаты</a></li>
+                    <li><a class="list-item" href="#how-order">Как заказать</a></li>
+                    <li><a class="list-item" href="#our-works">Фото работ</a></li>
+                    <li><a class="list-item" href="#delivery">Доставка</a></li>
+                    <li><a class="list-item" href="#reviews">Отзывы</a></li>
+                    <li><a class="list-item" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-        <section class="intro">
+    <section class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 intro-item-left">
@@ -94,7 +94,7 @@
     </section>
 
         <div class="main-div">
-            <section id="basic-waypoint" class="katalog">
+            <section id="basic-waypoint" class="katalog" id="katalog">
                 <div class="container">
                     <h2 class="katalog_title">Каталог</h2>
 
@@ -239,7 +239,7 @@
                 </div>
             </section>
 
-            <section class="our-xalats">
+            <section class="our-xalats" id="our-xalats">
                 <div class="container">
                     <h2 class="caption our-xalats-header">Наши халаты</h2>
                     <div class="row">
@@ -315,7 +315,7 @@
                 </div>
             </section>
 
-            <section class="how-order">
+            <section class="how-order" id="how-order">
                 <div class="container">
 
                     <div class="how-order-background-left">
@@ -400,7 +400,7 @@
                 </div>
             </section>
 
-            <section class="our-works">
+            <section class="our-works" id="our-works">
 
                 <div class="container">
 
@@ -435,7 +435,7 @@
                 </div>
             </section>
 
-            <section class="delivery">
+            <section class="delivery" id="delivery">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -535,7 +535,7 @@
                 </div>
             </section>
 
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <div class="container">
                     <h2 class="reviews_title">Отзывы</h2>
 
@@ -629,7 +629,7 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -844,7 +844,7 @@
             "lt='' role='presentation'/>"]
         });
 
-        $('.owl-carousel .owl-carousel-modal').owlCarousel({
+        $('.owl-carousel-modal').owlCarousel({
             items: 1,
             nav: true,
             navText: ["<img src='img/modal_window_arrow_left_not_active.png' alt='' " +
@@ -894,6 +894,8 @@
         });
 
 });
+
+
 
 </script>
 
